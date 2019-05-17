@@ -16,7 +16,7 @@ $(function() {
         let header = $('<header>').appendTo(tweet);
         let headshot = $(`<img src = "${tweetData.user.avatars.small}">`).appendTo(header);
         let name = $('<span>').addClass("name").text(tweetData.user.name).appendTo(header);
-        let atat = $('<span>').addClass("at").text(tweetData.handle).appendTo(header);
+        let atat = $('<span>').addClass("at").text(tweetData.user.handle).appendTo(header);
 
         let content = $('<p>').text(tweetData.content.text).appendTo(tweet);
 

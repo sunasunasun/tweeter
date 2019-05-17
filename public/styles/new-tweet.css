@@ -2,17 +2,21 @@
   position: relative;
   bottom: 30px;
   border-radius: 15px;
-  border-style: groove;
   padding: 20px;
   width: 600px;
   height: 250px;
-   left: 30%;
-   background-color: #eee;
+   background-color:  #FFFFFF;
+   border: 2px solid #b3e0ff;
+  width:50%;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .new-tweet h2 {
-border-bottom: 1px solid black;
+border-bottom: 1px solid #1a8cff;
 padding-bottom: 5px;
+color:#193366;
 }
 
 .new-tweet textarea {
@@ -30,7 +34,16 @@ textarea::placeholder {
 .new-tweet input{
   position: relative;
   top: 0.5em;
+  background: #66c2ff;
+  color: white;
+  height: 40px;
+  width: 80px;
+  font-weight: bold;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  letter-spacing: 0.05em;
 }
+
 .counter {
    float: right;
    position: relative;
@@ -41,11 +54,12 @@ textarea::placeholder {
   position: relative;
   bottom: 30px;
   border-radius: 15px;
-  border-bottom: 1px solid gray;
-  width: 600px;
+  width:50%;
   height: 250px;
-   left: 30%;
-   background-color:  #FFFFFF;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:  #FFFFFF;
+  border: 2px solid #b3e0ff;
 }
 
 #tweet-container article:hover {
@@ -53,10 +67,11 @@ textarea::placeholder {
   bottom: 30px;
   border-radius: 15px;
   border: groove;
-  width: 600px;
+  width:50%;
   height: 250px;
-   left: 30%;
-   background-color:  #FFFFFF;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color:  #FFFFFF;
 }
 
 #tweet-container article header img{
@@ -101,21 +116,31 @@ textarea::placeholder {
   border-top-right-radius: 15px;
   width: 100%;
   height: 80px;
-  background-color: #eee;
+  background-color: #ccebff;
 }
 
-#tweet-container article .at{
-  color: #bdc7ca;
+#tweet-container article:hover header{
   position: relative;
-  left: 65%;
-  bottom: 50%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: #66c2ff;
+}
+
+
+#tweet-container article header .at{
+  color: #bdc7ca;
+  float: right;
+  margin-right: 14px;
+  margin-top: 15px;
 }
 
 #tweet-container article:hover .at{
   color: #244751;
-  position: relative;
-  left: 65%;
-  bottom: 50%;
+  float: right;
+  margin-right: 14px;
+  margin-top: 15px;
 }
 
 #tweet-container article p{
@@ -143,39 +168,16 @@ textarea::placeholder {
 #tweet-container article:hover a{
   visibility:visible;
 }
+
 .icon{
     width: 180px;
     height: 65px;
-    position: relative;
-    right: -321px;
-    bottom: 3px;
+    position: absolute;
+    right: 14px;
+    bottom: -4px;
 }
 .tweet{
     margin-bottom: 20px;
-}
-
-.composeButton{
-  position: relative;
-    left: 900px;
-    bottom: 26px;
-    background-color: white;
-    color: #556B2F;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    width: 120px;
-    height: 50px;
-}
-
-.composeButton:hover {
-  position: relative;
-    left: 900px;
-    bottom: 26px;
-    background-color: lightgrey;
-    color: #556B2F;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    width: 120px;
-    height: 50px;
 }
 
 .error{
@@ -186,11 +188,14 @@ textarea::placeholder {
     color: #FF0000;
 }
 
-
-
-
-
-
-
-
-
+@media screen and (max-width: 800px) {
+  #tweet-container article{
+    width: 100%;
+  }
+  #tweet-container article:hover {
+    width: 100%;
+  }
+  .new-tweet{
+    width: 100%;
+  }
+}

@@ -18,12 +18,12 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background-color: #FFFFFF;
   padding-top: 80px;
 }
 
 .container{
-  width: 80%;
+  width: 80vw;
   margin: auto;
   padding-top: 80px;
   background-color:   #FFFFFF;
