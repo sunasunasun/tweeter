@@ -57,7 +57,7 @@ $(function() {
         } else if (data.length > 140) {
             $(".error").slideDown()
             $(".error").text('tweet content is too long')
-            return false;
+             return false;
         } else {
             $(".error").slideUp()
             $.ajax({
