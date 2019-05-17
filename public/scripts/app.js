@@ -21,7 +21,9 @@ $(function() {
         let content = $('<p>').text(tweetData.content.text).appendTo(tweet);
 
         let footer = $('<footer>').appendTo(tweet);
-        let date = $('<p>').text(tweetData.created_at).appendTo(footer);
+        let date = $('<p>').text(
+          moment(new Date(tweetData.created_at)).fromNow()
+          ).appendTo(footer);
         let imgLink = $('<a href="#">').appendTo(footer);
         let icon = $('<img class="icon" src="/images/1146293-space.png">').appendTo(imgLink);
 
