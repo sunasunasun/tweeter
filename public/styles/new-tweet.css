@@ -1,0 +1,196 @@
+.new-tweet{
+  position: relative;
+  bottom: 30px;
+  border-radius: 15px;
+  border-style: groove;
+  padding: 20px;
+  width: 600px;
+  height: 250px;
+   left: 30%;
+   background-color: #eee;
+}
+
+.new-tweet h2 {
+border-bottom: 1px solid black;
+padding-bottom: 5px;
+}
+
+.new-tweet textarea {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+textarea::placeholder {
+ padding-left: 1%;
+}
+
+.new-tweet input{
+  position: relative;
+  top: 0.5em;
+}
+.counter {
+   float: right;
+   position: relative;
+   top: 0.5em;
+}
+
+#tweet-container article{
+  position: relative;
+  bottom: 30px;
+  border-radius: 15px;
+  border-bottom: 1px solid gray;
+  width: 600px;
+  height: 250px;
+   left: 30%;
+   background-color:  #FFFFFF;
+}
+
+#tweet-container article:hover {
+  position: relative;
+  bottom: 30px;
+  border-radius: 15px;
+  border: groove;
+  width: 600px;
+  height: 250px;
+   left: 30%;
+   background-color:  #FFFFFF;
+}
+
+#tweet-container article header img{
+  opacity: 0.5;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+#tweet-container article:hover header img{
+  opacity: 1;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+#tweet-container article .name{
+  color: #bdc7ca;
+  position: relative;
+  left: 10px;
+  bottom: 40%;
+  line-height: normal;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#tweet-container article:hover .name {
+  color: #244751;
+  position: relative;
+  left: 10px;
+  bottom: 40%;
+  line-height: normal;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#tweet-container article header{
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: #eee;
+}
+
+#tweet-container article .at{
+  color: #bdc7ca;
+  position: relative;
+  left: 65%;
+  bottom: 50%;
+}
+
+#tweet-container article:hover .at{
+  color: #244751;
+  position: relative;
+  left: 65%;
+  bottom: 50%;
+}
+
+#tweet-container article p{
+    position: relative;
+    left: 2%;
+    top: 10%;
+
+}
+#tweet-container article footer{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 20%;
+    border-top: 1px solid lightgray;
+}
+
+#tweet-container article footer p{
+    position: relative;
+    left: 2%;
+}
+
+#tweet-container article footer a{
+  visibility:hidden;
+}
+#tweet-container article:hover a{
+  visibility:visible;
+}
+.icon{
+    width: 180px;
+    height: 65px;
+    position: relative;
+    right: -321px;
+    bottom: 3px;
+}
+.tweet{
+    margin-bottom: 20px;
+}
+
+.composeButton{
+  position: relative;
+    left: 900px;
+    bottom: 26px;
+    background-color: white;
+    color: #556B2F;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.composeButton:hover {
+  position: relative;
+    left: 900px;
+    bottom: 26px;
+    background-color: lightgrey;
+    color: #556B2F;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.error{
+    float: right;
+    position: relative;
+    top: -13px;
+    right: 208px;
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
